@@ -15,8 +15,21 @@
         }
         a:hover{
             text-decoration: none;
-            color: rgb(218, 10, 10);
+            color: rgb(41, 127, 224);
         }
+
+       @media(max-width: 575.98px){
+           #search{
+               scroll-margin-left: 4px;
+           }
+       }
+
+       @media(max-width: 575.98px){
+           #search input{
+               width: 90%;
+           }
+       }
+        
     </style>
 </head>
 <body>
@@ -24,25 +37,25 @@
 
     <header>
         <!-- first header -->
-        <div class="container">
+        <div class="container" id="home">
             <div class="row">
                 <!-- logo -->
-                <div class="col-1">
-                    <img src="assets/images/logo.png" alt="logo" width="55" height="55">
+                <div class="col-2 p-3">
+                    <img src="assets/images/logo2.png" alt="logo" width="55" height="55">
                 </div>
                 <!-- search bar -->
-                <div class="col-7">
+                <div class="col-9 col-sm-12 col-md-6 p-3">
                     <form class="form-inline my-2 my-lg-0 w-100">
                         <input class="form-control mr-sm-0 w-75" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
                 <!-- account -->
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="container">
                         <div class="row">
                             <!-- user icon -->
-                            <div class="col-6">
+                            <div class="col-6 col-md-8 col-lg-6 p-3">
                                 <i class="fas fa-shopping-cart" style="font-size: 2em; color: rgba(21, 146, 230, 0.986);"></i>
                                 <i class="fas fa-user px-3" style="font-size: 2em; color: rgba(21, 146, 230, 0.986);"></i>
                             </div>
@@ -67,6 +80,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+
+                    <!-- Navigation -->
+
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,31 +93,28 @@
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-bars"></i>Semua Kategori
+                                        <i class="d-none d-lg-block d-xl-none" class="fas fa-bars"></i>SEMUA KATEGORI
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">SAMSUNG</a>
+                                        <a class="dropdown-item" href="#">OPPO</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="#">REALME</a>
+                                        <a class="dropdown-item" href="#">XIAOMI</a>
                                     </div>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home</a>
+                                <li class="text-uppercase" class="nav-item active">
+                                    <a class="nav-link" href="#home">Home</a>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">SAMSUNG</a>
+                                <li class="text-uppercase" class="nav-item active">
+                                    <a class="nav-link" href="#populer">Produk Terpopuler</a>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">OPPO</a>
+                                <li class="text-uppercase" class="nav-item active">
+                                    <a class="nav-link" href="#terbaru">Produk Terbaru</a>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">REALME</a>
+                                <li class="text-uppercase" class="nav-item active">
+                                    <a class="nav-link" href="#rekomendasi">Rekomendasi</a>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">REDMI</a>
-                                </li>
-                                
                                 
                             </ul>
                             
@@ -131,17 +144,17 @@
             <div class="card-body">
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
                             <i class="fas fa-award fa-3x" style="color: rgba(21, 146, 230, 0.986);"></i>
                             <h3 class="h5 mt-4">Dijamin Keasliannya</h3>
                             <p>Di tempat kami Smartphone nya di jamin keasliannya.</p>
                         </div>
-                        <div class="col-4">
-                            <i class="fas fa-landmark fa-3x" style="color: rgba(21, 146, 230, 0.986);"></i>
-                            <h3 class="h5 mt-4">Waktu Garansi Lama</h3>
-                            <p>Jika Smartphone anda mengalami masalah jangan khawatir,produk kami memiliki garansi yang lama.</p>
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <i class="fas fa-shipping-fast fa-3x" style="color: rgba(21, 146, 230, 0.986);"></i>
+                            <h3 class="h5 mt-4">Pengiriman Cepat</h3>
+                            <p>Disini proses pengiriman cepat dijamin anda puas.</p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
                             <i class="fas fa-lock fa-3x" style="color: rgba(21, 146, 230, 0.986);"></i>
                             <h3 class="h5 mt-4">Dijamin Aman</h3>
                             <p>Semua produk masih tersegel dengan aman.</p>
@@ -156,12 +169,12 @@
     <!-- populer section -->
 
     <section class="container mt-3">
-        <h3>Produk Terpopuler</h3>
+        <h3 id="populer">Produk Terpopuler</h3>
         <div class="row">
-            <div class="col-4">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
                    <a href="#"><img src="assets/images/samsung-galaxy-a51.jpg" alt="samsung" class="img-fluid"></a>
-                   <div class="card-body">
+                   <div class="card-body d-md-block">
                        <a href="#">Samsung Galaxy A51</a>
                        <div class="rating mt-3">
                            <ul class="list-inline float-left">
@@ -182,8 +195,8 @@
                    </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
                     <a href="#"><img src="assets/images/realme6_pro.jpg" alt="realme" class="img-fluid"></a>
                     <div class="card-body">
                         <a href="#">Realme 6 Pro</a>
@@ -206,8 +219,32 @@
                     </div>
                  </div>
             </div>
-            <div class="col-4">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
+                    <a href="#"><img src="assets/images/redmi-8a.jpg" alt="redlmi" class="img-fluid"></a>
+                    <div class="card-body">
+                        <a href="#">Xiaomi Redmi 8A</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <span class="pl-3 text-muted">27 Terjual</span>
+                        <div class="clearfix"></div>
+                    </div>
+ 
+                    <div class="harga">
+                     <button type="button" class="btn btn-primary btn-block border-0" disabled>Rp.3.999.000,00</button>
+                     <button class="btn btn-primary btn-block" type="button">Beli</button>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
                     <a href="#"><img src="assets/images/xiaomi_redmi_note_8.jpg" alt="realme" class="img-fluid"></a>
                     <div class="card-body">
                         <a href="#">Xiaomi Redmi Note 8</a>
@@ -236,10 +273,10 @@
     <!-- Arrival section -->
 
     <section class="container mt-3">
-        <h3>Produk Terbaru</h3>
+        <h3 id="terbaru">Produk Terbaru</h3>
         <div class="row">
-            <div class="col-4">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
                    <a href="#"><img src="assets/images/oppo_f5.jpg" alt="oppo" class="img-fluid"></a>
                    <div class="card-body">
                        <a href="#">Oppo F5</a>
@@ -262,8 +299,8 @@
                    </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
                     <a href="#"><img src="assets/images/redmi-8a.jpg" alt="redlmi" class="img-fluid"></a>
                     <div class="card-body">
                         <a href="#">Xiaomi Redmi 8A</a>
@@ -286,8 +323,32 @@
                     </div>
                  </div>
             </div>
-            <div class="col-4">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
+                    <a href="#"><img src="assets/images/realme-5.jpg" alt="redlmi" class="img-fluid"></a>
+                    <div class="card-body">
+                        <a href="#">Realme 5</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <span class="pl-3 text-muted">27 Terjual</span>
+                        <div class="clearfix"></div>
+                    </div>
+ 
+                    <div class="harga">
+                     <button type="button" class="btn btn-primary btn-block border-0" disabled>Rp.3.999.000,00</button>
+                     <button class="btn btn-primary btn-block" type="button">Beli</button>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
                     <a href="#"><img src="assets/images/note9-pro.jpg" alt="redmi" class="img-fluid"></a>
                     <div class="card-body">
                         <a href="#">Xiaomi Redmi Note 9 Pro</a>
@@ -316,10 +377,10 @@
     <!-- Recommended Section -->
 
     <section class="container mt-3">
-        <h3>Rekomendasi</h3>
+        <h3 id="rekomendasi">Rekomendasi</h3>
         <div class="row">
-            <div class="col-4">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
                    <a href="#"><img src="assets/images/Redmi-7.jpg" alt="redmi" class="img-fluid"></a>
                    <div class="card-body">
                        <a href="#">Xiaomi Redmi 7</a>
@@ -342,8 +403,32 @@
                    </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
+                    <a href="#"><img src="assets/images/redmi-8a.jpg" alt="redlmi" class="img-fluid"></a>
+                    <div class="card-body">
+                        <a href="#">Xiaomi Redmi 8A</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <span class="pl-3 text-muted">27 Terjual</span>
+                        <div class="clearfix"></div>
+                    </div>
+ 
+                    <div class="harga">
+                     <button type="button" class="btn btn-primary btn-block border-0" disabled>Rp.3.999.000,00</button>
+                     <button class="btn btn-primary btn-block" type="button">Beli</button>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
                     <a href="#"><img src="assets/images/realme6_pro.jpg" alt="realme" class="img-fluid"></a>
                     <div class="card-body">
                         <a href="#">Realme 6 Pro</a>
@@ -366,8 +451,8 @@
                     </div>
                  </div>
             </div>
-            <div class="col-4">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="card h-100">
                     <a href="#"><img src="assets/images/note9-pro.jpg" alt="redmi" class="img-fluid"></a>
                     <div class="card-body">
                         <a href="#">Xiaomi Redmi Note 9 Pro</a>
@@ -398,33 +483,33 @@
     <section class="container mt-3">
         <h3>Mitra Kami</h3>
         <div class="row">
-            <div class="col-2">
+            <div class="col-4">
                 <figure class="figure">
-                    <img src="assets/images/shopee.png" class="figure-img img-thumbnail rounded" alt="shopee">
+                    <img src="assets/images/shopee.png" class="figure-img img-thumbnail rounded" alt="shopee" width="70">
                     <figcaption class="figure-caption text-center text-uppercase">Shopee</figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <figure class="figure">
-                    <img src="assets/images/bukalapak.png" class="figure-img img-thumbnail rounded" alt="bukalapak">
+                    <img src="assets/images/bukalapak.png" class="figure-img img-thumbnail rounded" alt="bukalapak" width="70">
                     <figcaption class="figure-caption text-center text-uppercase">Bukalapak</figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <figure class="figure">
-                    <img src="assets/images/rm.jpg" class="figure-img img-thumbnail rounded" alt="realme">
+                    <img src="assets/images/rm.jpg" class="figure-img img-thumbnail rounded" alt="realme" width="70">
                     <figcaption class="figure-caption text-center text-uppercase">Realme</figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <figure class="figure">
-                    <img src="assets/images/samsung.png" class="figure-img img-thumbnail rounded" alt="samsung">
+                    <img src="assets/images/samsung.png" class="figure-img img-thumbnail rounded" alt="samsung" width="70">
                     <figcaption class="figure-caption text-center text-uppercase">Samsung</figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <figure class="figure">
-                    <img src="assets/images/mi.png" class="figure-img img-thumbnail rounded" alt="Xiaomi">
+                    <img src="assets/images/mi.png" class="figure-img img-thumbnail rounded" alt="Xiaomi" width="70">
                     <figcaption class="figure-caption text-center text-uppercase">MI</figcaption>
                 </figure>
             </div>
@@ -448,7 +533,7 @@
 
     <section class="container mt-3">
         <div class="row">
-            <div class="col-3">
+            <div class="col-6 col-sm-6 col-md-6">
                 <h5>Perusahaan</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Tentang Kami</a></li>
@@ -456,7 +541,7 @@
                     <li><a href="#">Syarat &amp; Ketentuan</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-6 col-md-6">
                 <h5>Bantuan</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Kontak</a></li>
@@ -464,7 +549,7 @@
                     <li><a href="#">Garansi</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-6 col-md-6">
                 <h5>Akun</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Akun Pengguna</a></li>
@@ -472,7 +557,7 @@
                     <li><a href="#">Pengaturan Akun</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-6 col-md-6">
                 <h5>Sosial Media</h5>
                 <ul class="list-unstyled">
                     <li><a href="#"><i class="fab fa-facebook text-dark"></i>Facebook</a></li>
@@ -486,11 +571,11 @@
 
     <section class="container mt-3">
         <div class="row">
-            <div class="col-2">
+            <div class="col-12 col-sm-12 col-md-6">
                 <p>&copy; 2020 Toko Smartphone</p>
             </div>
 
-            <div class="col-8">
+            <div class="col-12 col-sm-12 col-md-6">
                 <ul>
                     <li class="list-inline-item">Toko@Smartphone.com</li>
                     <li class="list-inline-item">+6289679968639</li>
@@ -498,7 +583,7 @@
                 </ul>
             </div>
 
-            <div class="col-2">
+            <div class="col-12 col-sm-12 col-md-6">
                 <i class="fab fa-cc-visa"></i>
                 <i class="fab fa-cc-paypal"></i>
                 <i class="fab fa-cc-mastercard"></i>
